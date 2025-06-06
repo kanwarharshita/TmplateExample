@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Card Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ff6f70;
+      color: #333;
+    }
+
+    .card {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .box-main {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .box {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      width: 260px;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .box:hover {
+      background: black;
+      color: #fff;
+    }
+
+    .box:hover p {
+      color: #fff;
+    }
+
+    .box img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid #ff6f70;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .box:hover img {
+      border-color: #fff;
+    }
+
+    .box h2 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+    }
+
+    .box p {
+      color: #ff6f70;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .social i {
+      background-color: #ff6f70;
+      color: #fff;
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .box:hover .social i {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .social i:hover {
+      background-color: #ff4e4e;
+    }
+
+    .footer {
+      background: #fff;
+      color: #ff6f70;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 40px;
+      padding: 15px 30px;
+      display: inline-block;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .footer:hover {
+      background-color: black;
+      color: #fff;
+    }
+
+    @media (max-width: 767px) {
+      .card h1 {
+        font-size: 1.5rem;
+      }
+
+      .box {
+        width: 90%;
+      }
+
+      .footer {
+        font-size: 1rem;
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <h1>RESPONSIVE CARD SLIDER</h1>
+    <div class="box-main">
+      <div class="box">
+        <img src="https://www.shutterstock.com/image-photo/portrait-one-young-happy-cheerful-600nw-1980856400.jpg" alt="Andrew Neil">
+        <h2>Andrew Neil</h2>
+        <p>Web Designer</p>
+        <div class="social" aria-label="Social Links">
+          <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_37Ub0NHACiL00AErZxP13LbGhHlb9yd_iw&s" alt="Jasmine Carter">
+        <h2>Jasmine Carter</h2>
+        <p>UI Designer</p>
+        <div class="social" aria-label="Social Links">
+          <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://thumbs.dreamstime.com/b/portrait-attractive-year-old-man-99969071.jpg" alt="Justin Chung">
+        <h2>Justin Chung</h2>
+        <p>Web Developer</p>
+        <div class="social" aria-label="Social Links">
+          <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="footer">USING ONLY HTML & CSS</h2>
+  </section>
+</body>
+</html>
